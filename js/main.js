@@ -27,3 +27,11 @@ lastName.addEventListener('input', () =>{
     lastNameError.textContent = '';
   }
 })
+
+email.addEventListener('input', () =>{
+  if (email.validity.typeMismatch) {
+    emailError.innerHTML = 'Please enter a valid email. <br> ex(example@email.com)';
+  } else {
+    emailError.textContent = '';
+  }
+})
