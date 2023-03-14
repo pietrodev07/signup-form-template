@@ -11,3 +11,11 @@ const emailError = document.querySelector('#email-error');
 const telError = document.querySelector('#tel-error');
 const passwordError = document.querySelector('#password-error');
 const confirmPasswordError = document.querySelector('#confirm-password-error');
+
+firstName.addEventListener('input', (e) =>{
+  if(firstName.value === '') {
+    firstNameError.textContent = 'Please type your first name';
+  } else {
+    firstNameError.textContent = '';
+  }
+})
