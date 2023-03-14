@@ -22,6 +22,56 @@
         </div>
       </div>
 
+      <div class="right">
+        <form action="#" method="post" class="form">
+          <h2>Get started</h2>
+          <br>
+
+          <div>
+            <label for="first-name">FIRST NAME</label><br>
+            <input type="text" name="first-name" class="first-name" id="first-name" required>
+            <p id="first-name-error" class="error"></p>
+          </div>
+
+          <div>
+            <label for="last-name">LAST NAME</label><br>
+            <input type="text" name="last-name" class="last-name" id="last-name" required>
+            <p id="last-name-error" class="error"></p>
+          </div>
+
+          <div>
+            <label for="email">EMAIL</label><br>
+            <input type="email" name="email" class="email" id="email" required autocomplete="off">
+            <p id="email-error" class="error"></p>
+          </div>
+
+          <div>
+            <label for="tel">PHONE NUMBER</label><br>
+            <input type="tel" name="tel" class="tel" id="tel" required pattern='[0-9]{10}'>
+            <p id="tel-error" class="error"></p>
+          </div>
+
+          <div>
+            <label for="password">PASSWORD</label><br>
+            <input type="password" name="password" class="password" id="password" required pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+            <p id="password-error" class="error"></p>
+          </div>
+
+          <div>
+            <label for="confirm-password">CONFIRM PASSWORD</label><br>
+            <input type="password" name="confirm-password" class="confirm-password" id="confirm-password" required pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+            <p id="confirm-password-error" class="error"></p>
+          </div>
+
+          <div>
+            <button type="submit">CREATE ACCOUNT</button>
+          </div>
+
+          <br>
+          <p class="right-p">Already have an account? <span class="login-text">Log in</span></p>
+        </form>
+      </div>
+
     </div>
   </main>
 
