@@ -51,3 +51,79 @@ main {
   justify-content: center;
   flex-direction: column;
 }
+
+.right {
+  width: 60%;
+  background: #1D3565;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 40px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+input {
+  color: #1D3565;
+  padding-left: 20px;
+  width: 200px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 3px solid #D9D9D9;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+input:focus {
+  outline: #D9D9D9;
+}
+
+input:valid:focus {
+  border: 3px solid #45ff5e;
+}
+
+input:invalid:focus {
+  border: 3px solid #ff4564;
+}
+
+button {
+  color: #FFFFFF;
+  width: 200px;
+  height: 30px;
+  border: 3px solid #CE4E65;
+  border-radius: 8px;
+  background-color: #CE4E65;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f84076;
+  border: #f84076;
+}
+
+.right p {
+  font-weight: 600;
+}
+
+.login-text {
+  font-weight: 600;
+  color: #CE4E65;
+}
+
+.error {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #ff4564;
+  height: 35px;
+}
