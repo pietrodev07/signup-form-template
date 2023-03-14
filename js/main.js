@@ -76,3 +76,11 @@ password.addEventListener('input', (e) => {
   }
 
 });
+
+confirmPassword.addEventListener('input', (event)  => {
+  if (confirmPassword.value !== password.value) {
+    confirmPasswordError.textContent = 'Passwords do not match';
+  } else {
+    confirmPasswordError.textContent = '';
+  }
+});
