@@ -127,3 +127,42 @@ button:hover {
   color: #ff4564;
   height: 35px;
 }
+
+@media (max-width: 1500px) {
+  main {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .right {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .left {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .attribution {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .right-p {
+    font-size: 15px;
+  }
+
+}
