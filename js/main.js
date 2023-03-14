@@ -35,3 +35,11 @@ email.addEventListener('input', () =>{
     emailError.textContent = '';
   }
 })
+
+tel.addEventListener('input', () =>{
+  if(tel.validity.patternMismatch) {
+    telError.textContent = 'Please enter 10 number';
+  } else {
+    telError.textContent = '';
+  }
+})
