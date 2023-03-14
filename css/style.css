@@ -18,3 +18,36 @@ a {
 body {
   overflow-x: hidden;
 }
+
+main {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #1E3F82 2.6%, #185DE2 27.6%, #A75C5C 100%) no-repeat center center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 90%;
+  display: flex;
+}
+
+.left {
+  width: 40%;
+  background: #CE4E65;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.first-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
