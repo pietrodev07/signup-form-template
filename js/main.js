@@ -19,3 +19,11 @@ firstName.addEventListener('input', (e) =>{
     firstNameError.textContent = '';
   }
 })
+
+lastName.addEventListener('input', () =>{
+  if(lastName.value === '') {
+    lastNameError.textContent = 'Please type your last name';
+  } else {
+    lastNameError.textContent = '';
+  }
+})
