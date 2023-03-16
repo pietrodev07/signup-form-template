@@ -4,6 +4,7 @@ const email = document.querySelector('#email');
 const tel = document.querySelector('#tel');
 const password = document.querySelector('#password');
 const confirmPassword = document.querySelector('#confirm-password');
+const submitButton = document.querySelector("#submit-button");
 
 const firstNameError = document.querySelector('#first-name-error');
 const lastNameError = document.querySelector('#last-name-error');
@@ -84,3 +85,8 @@ confirmPassword.addEventListener('input', (event)  => {
     confirmPasswordError.textContent = '';
   }
 });
+
+submitButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  location.reload();
+})
