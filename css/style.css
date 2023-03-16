@@ -83,6 +83,7 @@ input {
   border: 3px solid #D9D9D9;
   border-radius: 8px;
   margin-top: 10px;
+  transition: all .4s linear;
 }
 
 input:focus {
